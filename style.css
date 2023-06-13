@@ -577,6 +577,12 @@ font-size: 40px;
 .project__description--para{
     margin: 16px 0;
 }
+.phone__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
 /* FOOTER */
 
 footer{
@@ -672,6 +678,9 @@ third= 80vw
 }
 /* Small phones, tablets, large smart phones */
 @media (max-width: 768px) {
+.phone__link {
+    opacity: 1;
+}
     .shape{
         display: none;
     }
@@ -693,11 +702,17 @@ third= 80vw
 .modal__half{
     width: 100%;
 }
+.blackiconcolor{
+    color: black;
+}
 }
 
 /* small phones */
 
 @media (max-width:480px){
+    .phone__link{
+        opacity: 1;
+    }
     .shape{
         display: none;
     }
@@ -728,3 +743,5 @@ third= 80vw
         padding: 40px;
     }
 }
+/* Phone Links */
+
